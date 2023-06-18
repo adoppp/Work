@@ -83,6 +83,7 @@ button:active {
   --white-three: #F8F8F8;
   --gray-four: #4E4E4E;
   --gray-five: #505D68;
+  --gray-six: #A5A5A5;
 }
 
 /*header styles*/
@@ -354,7 +355,6 @@ button:active {
 .list-products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 /* section three */
@@ -583,4 +583,121 @@ button:active {
     justify-content: space-between;
     align-items: center;
     padding: 56px 0 84px 0;
+}
+
+/* footer */
+
+.nav-footer-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.title-address-footer {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray);
+    font-style: normal;
+}
+
+.cont-lists-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-one-item {
+    margin-bottom: 12px;
+}
+
+.footer-one-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer-two-item {
+    margin-bottom: 12px;
+}
+
+.footer-two-item:last-child {
+    margin-bottom: 0;
+}
+
+.nav-footer-cont {
+    max-width: 280px;
+    width: 100%;
+}
+
+.link-footer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gray);
+    position: relative;
+}
+
+.link-footer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--gray);
+}
+
+.link-footer::before {
+    transition: width 0.35s;
+}
+
+.link-footer:hover:before {
+    width: 100%;
+}
+
+.title-card-address-footer {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 38px;
+    color: var(--gray-six);
+    margin: 0;
+    height: 22px;
+}
+
+.p-footer-adress {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gray);
+    max-width: 236px;
+}
+
+.address-footer-item:nth-child(1) {
+    height: 56px;
+}
+
+.address-footer-item:nth-child(2) {
+    margin-bottom: 4px;
+}
+
+.address-footer-item:nth-child(3) {
+    max-width: 260px;
+    max-height: 40px;
+}
+
+.tel-footer-adderss {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.mail-footer-adderss {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.footer-cont {
+    justify-content: space-between;
+    padding: 30px 0 100px 0;
 }

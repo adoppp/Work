@@ -6,7 +6,7 @@ new Swiper('.slider', {
         pervEl: '.slider-swiper-button-prev',
     },
 
-    grabcursor: true,
+    grabСursor: true,
    
     slidesPerView: 3,
 
