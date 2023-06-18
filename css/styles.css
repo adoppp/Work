@@ -670,6 +670,7 @@ button:active {
     line-height: 24px;
     color: var(--gray);
     max-width: 236px;
+    font-style: normal;
 }
 
 .address-footer-item:nth-child(1) {
@@ -695,6 +696,7 @@ button:active {
     font-weight: 400;
     font-size: 14px;
     color: var(--gray);
+    font-style: normal;
 }
 
 .footer-cont {
