@@ -1238,6 +1238,163 @@ button:active {
     display: none;
 }
 
+/* prod page */
+
+.item-ab-us-first:nth-child(5) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: var(--white-second);
+    margin-left: 8px;
+}
+
+.title-backgrnd-section-for-product-page {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100%;
+    color: var(--white-second);
+    position: relative;
+    margin: 0 auto;
+}
+
+.title-backgrnd-section-for-product-page::after {
+    content: '';
+    display: block;
+    width: 77px;
+    height: 3px;
+    background-color: var(--white-second);
+    position: absolute;
+    top: 45px;
+    left: 132px;
+}
+
+.item-product-page {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.5;
+    color: var(--three-gray);
+}
+
+.item-product-page:nth-child(1) {
+    margin-right: 18px;
+}
+
+.item-product-page:nth-child(3) {
+    margin-right: 47px;
+}
+
+.green-galochka {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--second-green);
+}
+
+.list-product {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 24px;
+    max-width: 400px;
+}
+
+.pr-page {
+   
+}
+
+.first {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+
+.p-descr-p-page {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--three-gray);
+    max-width: 610px;
+}
+
+.second {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--gray);
+    margin-top: 36px;
+    margin-bottom: 20px;
+}
+
+.list-characters-of-product {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 28px;
+}
+
+.chsrecters-of-product-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--three-gray);
+}
+
+.chsrecters-of-product-item:first-child {
+    margin-right: 20px;
+}
+
+.number {
+    font-weight: 700;
+}
+
+.pishchevaya-price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--three-gray);
+}
+
+.value-price {
+    font-weight: 700;
+}
+
+.margin-p-p {
+    margin-right: 16px;
+}
+
+.description-of-product-cont {
+    margin-left: 84px;
+}
+
+.pr-page img {
+    margin-bottom: 24px;
+}
+
+.product-part-container {
+    padding: 20px 0 57px 0;
+}
+
+.title-recomedations {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: var(--gray);
+    margin-bottom: 45px;
+}
+
+.cont-recomendations {
+    flex-direction: column;
+    padding-bottom: 105px;
+}
+
+@media screen and (max-width: 375px) {
+    .title-backgrnd-section-for-product-page::after {
+        top: 80px;
+        left: 122px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .modal-open {
         background-color: transparent;
@@ -1388,8 +1545,12 @@ button:active {
         padding: 80px 16px;
     }
 
+    .footer-cont .logo-link {
+        display: none;
+    }
+
     .footer-cont a:first-of-type {
-        margin-right: 8px;
+        margin-right: 12px;
     }
 
     .cont-lists-footer {
@@ -1402,7 +1563,7 @@ button:active {
 
     .link-footer {
         margin-right: 0;
-        font-size: 10px;
+        font-size: 14px;
         font-weight: 600;
     }
 
@@ -1515,6 +1676,29 @@ button:active {
     .is-hidden {
         display: none;
     }
+
+    .product-part-container {
+        flex-direction: column;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .description-of-product-cont {
+        margin-left: 0;
+        margin-top: 36px;
+    }
+
+    .title-recomedations {
+        text-align: center;
+    }
+
+    .item-ab-us-first:nth-child(5) {
+        max-width: min-content;
+    }
+
+    .title-backgrnd-section-for-product-page {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
@@ -1526,6 +1710,15 @@ button:active {
         left: 0;
         background-color: rgba(46, 47, 66, 0.4);
         z-index: 2;
+    }
+
+    .title-recomedations {
+        text-align: center;
+    }
+
+    .product-part-container {
+        padding-right: 16px;
+        padding-left: 16px;
     }
     
     .modal {
