@@ -13,6 +13,7 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 ul,
@@ -1489,12 +1490,54 @@ button:active {
     line-height: 16px;
     text-decoration-line: underline;
     color: var(--white-opacity);
-    margin-right: 8px;}
+    margin-right: 8px;
+}
+
+
+.section-background-chicken {
+    background: url(../img/chicken-bck.png),
+    linear-gradient(0deg, rgba(156, 195, 54, 0.2), rgba(156, 195, 54, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #9CC336;
+}
+
+
+.title-backgrnd-section-news-404 {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 100%;
+    color: var(--white-second);
+    position: relative;
+    margin: 0 auto;
+}
+
+.title-backgrnd-section-news-404::after {
+    content: '';
+    display: block;
+    width: 77px;
+    height: 3px;
+    background-color: var(--white-second);
+    position: absolute;
+    top: 96px;
+    left: 47px;
+}
 
 @media screen and (max-width: 375px) {
     .title-backgrnd-section-for-product-page::after {
         top: 80px;
         left: 122px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .img-item-cert img {
+        width: 100vw;
     }
 }
 
@@ -1651,10 +1694,6 @@ button:active {
 
     .section-six img {
         margin-top: 36px;
-    }
-
-    .address-footer-cont {
-        
     }
 
     .footer-cont {
