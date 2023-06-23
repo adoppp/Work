@@ -129,7 +129,7 @@
           </ul>
 
           <h1
-            class="title-backgrnd-section-for-certificate animate__animated animate__zoomIn"
+            class="title-backgrnd-section-for-certificate wow animate__animated animate__zoomIn"
           >
             Сертификаты
           </h1>
@@ -138,7 +138,9 @@
 
       <section>
         <div class="section-container certificate-section">
-          <ul class="list-description-certificate">
+          <ul
+            class="list-description-certificate wow animate__animated animate__slow animate__fadeIn"
+          >
             <li class="item-sertificate">
               <p class="p-certificate">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -186,7 +188,7 @@
           </ul>
 
           <ul class="img-list-cert">
-            <li class="img-item-cert animate__animated animate__fadeInUp">
+            <li class="img-item-cert wow animate__animated animate__fadeInUp">
               <a
                 href="./img/certificate-1@2.jpg"
                 data-fancybox="gallery"
@@ -196,7 +198,7 @@
               </a>
             </li>
             <li
-              class="img-item-cert animate__animated animate__slow animate__fadeInUp"
+              class="img-item-cert wow animate__animated animate__slow animate__fadeInUp"
             >
               <a
                 href="./img/certificate-2@2.jpg"
@@ -207,7 +209,7 @@
               </a>
             </li>
             <li
-              class="img-item-cert animate__animated animate__slower animate__fadeInUp"
+              class="img-item-cert wow animate__animated animate__slower animate__fadeInUp"
             >
               <a
                 href="./img/certificate-3@2.jpg"
@@ -305,5 +307,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="./js/gallery.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

@@ -521,6 +521,7 @@ button:active {
 
 .swiper-card img {
     margin-bottom: 36px;
+    max-width: 360px;
 }
 
 .slider-swiper-slide {
@@ -1526,6 +1527,22 @@ button:active {
     position: absolute;
     top: 96px;
     left: 47px;
+}
+
+.slider-swiper-button-prev::after {
+    content: '<';
+    font-size: 40px;
+    color: #C2D1D9;
+}
+
+.slider-swiper-button-next::after {
+    content: '>';
+    font-size: 40px;
+    color: #C2D1D9;
+}
+
+.relative-swiper {
+    position: relative;
 }
 
 @media screen and (max-width: 375px) {

@@ -125,7 +125,7 @@
           </ul>
 
           <h1
-            class="title-backgrnd-section-for-contact animate__animated animate__zoomIn"
+            class="title-backgrnd-section-for-contact wow animate__animated animate__zoomIn"
           >
             Контакты
           </h1>
@@ -134,7 +134,9 @@
 
       <section>
         <div class="section-container contact-container">
-          <ul class="first-contact-list animate__animated animate__fadeInUp">
+          <ul
+            class="first-contact-list wow animate__slow animate__animated animate__fadeInUp"
+          >
             <li class="first-contact-item">
               <h3 class="contact-title">Контактный адрес (Производство):</h3>
             </li>
@@ -183,7 +185,7 @@
           </ul>
 
           <ul
-            class="second-contact-list animate__animated animate__slow animate__fadeInUp"
+            class="second-contact-list wow animate__slow animate__animated animate__slow animate__fadeInUp"
           >
             <li class="second-contact-item">
               <h3 class="contact-title">Контактный адрес (Офис):</h3>
@@ -229,7 +231,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="map-iframe animate__animated animate__slower animate__bounceInRight"
+              class="map-iframe wow animate__slower animate__animated animate__slower animate__fadeInRight"
             ></iframe>
           </div>
         </div>
@@ -318,5 +320,9 @@
 
     <script src="./js/map.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

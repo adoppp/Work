@@ -110,14 +110,20 @@
     <main>
       <section class="section-background">
         <div class="section-container container-for-first-sec-bg">
-          <h1 class="title-backgrnd-section-news-404">404</h1>
+          <h1
+            class="title-backgrnd-section-news-404 wow animate__animated animate__zoomIn"
+          >
+            404
+          </h1>
         </div>
       </section>
 
       <section>
         <div class="section-container news-container">
           <h1 class="title-news">Птицефабрика «Aiser»</h1>
-          <p class="decription-aiser-news">
+          <p
+            class="decription-aiser-news wow animate__animated animate__slow animate__fadeIn"
+          >
             Птицефабрика «Aiser» - это высокотехнологичное предприятие с четким
             отлаженным механизмом и жестким контролем на всех этапах
             производства. Вероятность возникновения эпидемий и птичьих болезней
@@ -130,7 +136,9 @@
           <h2 class="news-title-two">
             Периметр птицефабрики охраняется, соблюдается производственная
           </h2>
-          <p class="news-descr-two">
+          <p
+            class="news-descr-two wow animate__animated animate__slow animate__fadeIn"
+          >
             Периметр птицефабрики охраняется, соблюдается производственная
             дисциплина, оборудованы санпропускники, дезбарьеры. Ветеринарная
             служба предприятия ведет большую профилактическую работу. В перечень
@@ -143,7 +151,9 @@
             осуществляет контроль качества производимой продукции.
           </h3>
 
-          <ol class="list-news">
+          <ol
+            class="list-news wow animate__animated animate__slow animate__fadeIn"
+          >
             <li class="item-news">
               Лаборатория птицефабрики следит за составом рациона бройлеров,
               осуществляет контроль качества производимой продукции.
@@ -171,9 +181,19 @@
       <section>
         <div class="section-container img-section">
           <ul class="img-list">
-            <li class="img-item"><img src="./img/one.jpg" alt="Photo" /></li>
-            <li class="img-item"><img src="./img/two.jpg" alt="Photo" /></li>
-            <li class="img-item"><img src="./img/three.jpg" alt="Photo" /></li>
+            <li class="img-item wow animate__animated animate__fadeInUp">
+              <img src="./img/one.jpg" alt="Photo" />
+            </li>
+            <li
+              class="img-item wow animate__animated animate__slow animate__fadeInUp"
+            >
+              <img src="./img/two.jpg" alt="Photo" />
+            </li>
+            <li
+              class="img-item wow animate__animated animate__slower animate__fadeInUp"
+            >
+              <img src="./img/three.jpg" alt="Photo" />
+            </li>
           </ul>
         </div>
       </section>
@@ -259,5 +279,9 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
